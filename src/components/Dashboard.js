@@ -4,6 +4,7 @@ import { fetchData } from '../utils/Api';
 import UserList from './UserList';
 import Summary from './Summary';
 import '../styles/Dashboard.css';
+import SubscriptionChart from './SubscriptionChart';
 
 
 const Dashboard = () => {
@@ -30,9 +31,12 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard">
-            <Summary users={data.users} subscriptions={data.subscriptions} />
-            <UserList users={data.users} subscriptions={data.subscriptions} />
+        <div className='layout'>
+        <Summary users={data.users} subscriptions={data.subscriptions} />
+        <SubscriptionChart subscriptions={data.subscriptions} />
         </div>
+        <UserList users={data.users} subscriptions={data.subscriptions} />
+    </div>
     );
 };
 
