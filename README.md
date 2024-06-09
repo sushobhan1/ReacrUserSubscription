@@ -1,70 +1,32 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React User Subscription Dashboard
 
-## Available Scripts
+This project provides the dashboard for user subscription dashboard where the summary,table and visulation of various subscription for each user is provided.
 
-In the project directory, you can run:
+# Tools
+React.js is used to develop the dashboard with data visulation using chart.js library.
 
-### `npm start`
+# Project Structure
+## Components:
+1. Dashboard.js: Parent component for user dashboard.
+2. Summary.js: Provides the summary of the imformation provided in the .json file.
+3. UserList.js: Shows the tabular bata for the user and information about the user and subscription.
+4. UserDetails.js: Shows the popup module of the user data.
+5. SubscriptionChart.js: Shows the visualization of the subscription package.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Utils 
+1. Api.js: Implements the Api calls from .json file.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Data 
+1. User.json: Here the information of user is in json format.
+2. Subscription.json: Here the information about the user subscription plan is in json format.
 
-### `npm test`
+## Styles 
+ 1. App.css: Provides global styles for the entire application, including basic layout and typography settings.
+ 2. Dashboard.css: Provides styles specific to the dashboard component, enhancing its layout and functionality
+ 3. Chart.css: Basic styling for chart container.
+ 4. UserDetails.css: Styles the user details component, making it visually appealing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Requirement 
+1. React.js(library)
+2. Chart.js(library): npm i chart.js react-chartjs-2
