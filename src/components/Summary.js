@@ -8,6 +8,7 @@ const Summary = ({ users, subscriptions }) => {
     console.log(userIds)
     
     const totalUsers = users.length;
+    const totalSubscription = subscriptions.length;
     const activeSubscriptions =  subscriptions.filter(sub => new Date(sub.expires_on) > new Date() && (users.filter(user=>user.id == sub.user_id).length>0) == true ).length;
     const inActiveSubscriptions = subscriptions.filter(sub => new Date(sub.expires_on) < new Date()).length;
     const totalSubscriber = subscriptions.filter(sub=> (users.filter(user=>user.id == sub.user_id).length>0)).length;
@@ -15,6 +16,7 @@ const Summary = ({ users, subscriptions }) => {
         <div className="summary">
             <h2>Summary</h2>
             <p>Total Users: {totalUsers}</p>
+            <p>Total Subscriptions: {totalSubscription}</p>
             <p>Active Subscriptions: {activeSubscriptions}</p>
             <p>Inactive Subscriptions: {inActiveSubscriptions}</p>
             <p>Total Subscribers: {totalSubscriber}</p>
